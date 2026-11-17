@@ -1,0 +1,84 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "0.1.0-prototype",
+  "FriendlyName": "UnionPay Payment Integration",
+  "Description": "Prototype UnionPay payment plugin for Unreal Engine: a thin, server-authoritative client exposed to Blueprints.",
+  "Category": "Payment Systems",
+  "CreatedBy": "Carlos Shields-Davis",
+  "CreatedByURL": "https://github.com/basedlsg",
+  "DocsURL": "https://github.com/basedlsg/unreal-unionpay-plugin#readme",
+  "MarketplaceURL": "",
+  "SupportURL": "https://github.com/basedlsg/unreal-unionpay-plugin/issues",
+  "EngineVersion": "5.1.0",
+  "CanContainContent": true,
+  "IsBetaVersion": true,
+  "IsExperimentalVersion": false,
+  "Installed": false,
+  "Modules": [
+    {
+      "Name": "UnionPayCore",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "WhitelistPlatforms": [
+        "Win64",
+        "Mac",
+        "Linux",
+        "Android",
+        "IOS"
+      ]
+    },
+    {
+      "Name": "UnionPaySecurity",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "WhitelistPlatforms": [
+        "Win64",
+        "Mac",
+        "Linux",
+        "Android",
+        "IOS"
+      ]
+    },
+    {
+      "Name": "UnionPayUI",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "WhitelistPlatforms": [
+        "Win64",
+        "Mac",
+        "Linux",
+        "Android",
+        "IOS"
+      ]
+    },
+    {
+      "Name": "UnionPayEditor",
+      "Type": "Editor",
+      "LoadingPhase": "Default",
+      "WhitelistPlatforms": [
+        "Win64",
+        "Mac",
+        "Linux"
+      ]
+    }
+  ],
+  "Plugins": [
+    {
+      "Name": "HTTP",
+      "Enabled": true
+    },
+    {
+      "Name": "Json",
+      "Enabled": true
+    },
+    {
+      "Name": "UMG",
+      "Enabled": true
+    },
+    {
+      "Name": "WebBrowser",
+      "Enabled": true
+    }
+  ]
+}
